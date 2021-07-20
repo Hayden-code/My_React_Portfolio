@@ -3,7 +3,9 @@ import profile from "../images/profile.jpeg";
 function Header() {
   return (
     <header className="App-header">
-      <nav>
+      <div>
+        <h1 id="welcome"> Welcome to My Portfolio Website </h1>
+
         <ul>
           <li>
             <button className="navBtn">
@@ -28,9 +30,11 @@ function Header() {
               </a>
             </button>
           </li>
+          <li>
+            <img src={profile} alt="portrait shot of myself" width="90%"></img>
+          </li>
         </ul>
-        <img src={profile} alt="head shot of myself" width="90%"></img>
-      </nav>
+      </div>
     </header>
   );
 }

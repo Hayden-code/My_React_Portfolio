@@ -51,8 +51,15 @@ li {
   text-align: center;
 }
 
-nav > ul {
+ul {
   list-style-type: none;
+  position: fixed;
+  top: 0px;
+  background-color: var(--BKG-color2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  height: 100%;
+  width: 200px;
 }
 a {
   color: white;
@@ -64,16 +71,11 @@ a :visited {
 
 /* Navbar buttons */
 
-nav {
-  position: fixed;
-  background-color: var(--BKG-color2);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  height: 100%;
-  width: 200px;
+header {
+  flex-direction: row;
 }
 
-nav > img {
+li > img {
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -93,16 +95,25 @@ nav > img {
 .navBtn :hover {
   background-color: rgb(230, 230, 230);
   color: black;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
+#welcome {
+  background-color: var(--BKG-color);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: var(--Border);
+  border-radius: var(--Radius);
+  padding: 10px;
+  margin-top: 10px;
+}
 /* Rest of the page */
 
 #content {
   position: absolute;
   padding: 100px;
 }
-#content > div {
+.contentBubble {
   background-color: var(--BKG-color);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -188,8 +199,11 @@ nav > img {
   #content {
     left: 0px;
   }
-  nav {
+  ul {
     display: none;
+  }
+  #welcome {
+    margin-left: 0px;
   }
 }
 
@@ -214,7 +228,11 @@ nav > img {
   #content {
     left: 200px;
   }
-  nav {
+  ul {
     display: block;
+  }
+  #welcome {
+    margin-left: 220px;
+    margin-right: 20px;
   }
 }
