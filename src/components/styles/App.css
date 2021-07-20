@@ -17,7 +17,7 @@
 }
 
 body {
-  background-image: url("../images/terminal.jpg");
+  background-image: url("../../images/terminal.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,7 +51,7 @@ li {
   text-align: center;
 }
 
-ul {
+.navbar {
   list-style-type: none;
   position: fixed;
   top: 0px;
@@ -60,13 +60,6 @@ ul {
   -webkit-backdrop-filter: blur(8px);
   height: 100%;
   width: 200px;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
-a :visited {
-  color: white;
 }
 
 /* Navbar buttons */
@@ -90,6 +83,7 @@ li > img {
   position: relative;
   top: 20px;
   transition-duration: 0.5s;
+  color: white;
 }
 
 .navBtn :hover {
@@ -109,10 +103,6 @@ li > img {
 }
 /* Rest of the page */
 
-#content {
-  position: absolute;
-  padding: 100px;
-}
 .contentBubble {
   background-color: var(--BKG-color);
   backdrop-filter: blur(8px);
@@ -203,7 +193,12 @@ li > img {
     display: none;
   }
   #welcome {
-    margin-left: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .contentBubble {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -232,6 +227,10 @@ li > img {
     display: block;
   }
   #welcome {
+    margin-left: 220px;
+    margin-right: 20px;
+  }
+  .contentBubble {
     margin-left: 220px;
     margin-right: 20px;
   }

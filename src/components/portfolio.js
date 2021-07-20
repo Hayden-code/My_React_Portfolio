@@ -1,8 +1,14 @@
 import Header from "./header";
-import "./App.css";
+import Bio from "./bio";
+import "./styles/App.css";
 
 function Portfolio() {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <Bio />
+    </div>
+  );
 }
 
 export default Portfolio;

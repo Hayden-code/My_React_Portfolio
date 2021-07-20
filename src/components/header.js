@@ -6,28 +6,20 @@ function Header() {
       <div>
         <h1 id="welcome"> Welcome to My Portfolio Website </h1>
 
-        <ul>
+        <ul className="navbar">
           <li>
             <button className="navBtn">
-              {" "}
-              <a href="#bio">
-                {" "}
-                <h4> Bio </h4>{" "}
-              </a>
+              <h4> Bio </h4>
             </button>
           </li>
           <li>
             <button className="navBtn">
-              <a href="#projects">
-                <h4>Projects</h4>
-              </a>
+              <h4>Projects</h4>
             </button>
           </li>
           <li>
             <button className="navBtn">
-              <a href="#contact">
-                <h4>Contact</h4>
-              </a>
+              <h4>Contact</h4>
             </button>
           </li>
           <li>
