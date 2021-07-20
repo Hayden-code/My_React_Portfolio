@@ -1,0 +1,220 @@
+/* Variables */
+
+:root {
+  --BKG-color: rgba(255, 255, 255, 0.5);
+  --BKG-color2: rgba(0, 0, 128, 0.75);
+  --Border: 1px solid white;
+  --Radius: 10px;
+  --Content-margin: 200px 0px 200px 0px;
+}
+
+/* Universal selector */
+
+* {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("../images/terminal.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+}
+p {
+  text-align: center;
+  padding: 5px;
+}
+li {
+  padding: 5px;
+  list-style-position: inside;
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a :visited {
+  color: white;
+}
+
+/* Navbar buttons */
+
+nav {
+  position: fixed;
+  background-color: var(--BKG-color2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  height: 100%;
+  width: 200px;
+}
+
+nav > img {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.navBtn {
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 80%;
+  margin: 10px;
+  border-radius: var(--Radius);
+  position: relative;
+  top: 20px;
+  transition-duration: 0.5s;
+}
+
+.navBtn :hover {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  transition-duration: 0.5s;
+}
+
+/* Rest of the page */
+
+#content {
+  position: absolute;
+  padding: 100px;
+}
+#content > div {
+  background-color: var(--BKG-color);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: var(--Border);
+  border-radius: var(--Radius);
+  margin: var(--Content-margin);
+  max-width: 1000px;
+  padding: 20px;
+}
+
+/* Projects div */
+
+.projectContainer {
+  display: flex;
+  flex: 1, 0, 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  flex: 2, 0 auto;
+  padding: 10px;
+  border: 10px groove var(--BKG-color2);
+  align-items: center;
+  text-align: center;
+  border-radius: var(--Radius);
+  margin: 5px;
+}
+
+.comingSoon {
+  height: 107px;
+  width: 175px;
+  background-color: black;
+  color: aqua;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  transition-duration: 0.2s;
+  position: relative;
+  border-radius: 5px;
+}
+
+/* extra repos */
+
+.repoBtn {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 60%;
+  margin: 10px;
+  border-radius: var(--Radius);
+  position: relative;
+  top: 20px;
+}
+
+#repos {
+  text-align: center;
+  margin: 50px;
+}
+
+.repoLi {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  background-color: var(--BKG-color);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: var(--Border);
+  border-radius: var(--Radius);
+  margin: 10px;
+}
+
+@media (min-width: 1px) {
+  .project {
+    width: 100%;
+  }
+  #content {
+    left: 0px;
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 415px) {
+  .comingSoon:hover {
+    transition-duration: 0.2s;
+    transform: scale(2);
+  }
+}
+
+@media (min-width: 715px) {
+  .project {
+    width: 300px;
+  }
+  .comingSoon:hover {
+    transition-duration: 0.2s;
+    transform: scale(1.75);
+  }
+  .comingSoon:hover ~ p {
+    filter: blur(5px);
+  }
+  #content {
+    left: 200px;
+  }
+  nav {
+    display: block;
+  }
+}
