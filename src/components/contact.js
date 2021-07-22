@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div class="contentBubble" id="contact">
+    <div className="contentBubble" id="contact">
       <h2>Contact Me</h2>
       <ul>
         <li>

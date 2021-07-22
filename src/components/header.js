@@ -9,17 +9,25 @@ function Header() {
         <ul className="navbar">
           <li>
             <button className="navBtn">
-              <h4> Bio </h4>
+              {" "}
+              <a href="#bio">
+                {" "}
+                <h4> Bio </h4>{" "}
+              </a>
             </button>
           </li>
           <li>
             <button className="navBtn">
-              <h4>Projects</h4>
+              <a href="#projects">
+                <h4>Projects</h4>
+              </a>
             </button>
           </li>
           <li>
             <button className="navBtn">
-              <h4>Contact</h4>
+              <a href="#contact">
+                <h4>Contact</h4>
+              </a>
             </button>
           </li>
           <li>

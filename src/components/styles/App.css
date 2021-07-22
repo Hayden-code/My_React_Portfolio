@@ -42,13 +42,16 @@ h4 {
   font-size: 20px;
 }
 p {
+  font-size: 20px;
   text-align: center;
   padding: 5px;
 }
 li {
+  font-size: 20px;
   padding: 5px;
   list-style-position: inside;
   text-align: center;
+  list-style: none;
 }
 
 .navbar {
@@ -85,7 +88,10 @@ li > img {
   transition-duration: 0.5s;
   color: white;
 }
-
+.navBtn > a {
+  text-decoration: none;
+  color: white;
+}
 .navBtn :hover {
   background-color: rgb(230, 230, 230);
   color: black;
@@ -110,7 +116,7 @@ li > img {
   border: var(--Border);
   border-radius: var(--Radius);
   margin: var(--Content-margin);
-  max-width: 1000px;
+
   padding: 20px;
 }
 
