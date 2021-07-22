@@ -195,7 +195,7 @@ li > img {
   #content {
     left: 0px;
   }
-  ul {
+  .navbar {
     display: none;
   }
   #welcome {
@@ -229,7 +229,7 @@ li > img {
   #content {
     left: 200px;
   }
-  ul {
+  .navbar {
     display: block;
   }
   #welcome {
