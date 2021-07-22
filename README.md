@@ -6,7 +6,7 @@
 
 # User-Story
 
-    I want to employee Hayden Jones as a full stack web developer but want to see what he knows.
+I want to employee Hayden Jones as a full stack web developer but want to see what he knows.
 
 # Table of contents
 
@@ -22,7 +22,7 @@
 
 # Description
 
-    Creating my first react app, I have transferred across my old portfolio code and made it in the structure of react.
+Creating my first react app, I have transferred across my old portfolio code and made it in the structure of react.
 
 # Screenshots
 
