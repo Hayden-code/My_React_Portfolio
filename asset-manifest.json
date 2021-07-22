@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46d6569d.chunk.css",
+    "main.js": "/static/js/main.338c106f.chunk.js",
+    "main.js.map": "/static/js/main.338c106f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.219b3b36.js",
+    "runtime-main.js.map": "/static/js/runtime-main.219b3b36.js.map",
+    "static/js/2.2ab908f2.chunk.js": "/static/js/2.2ab908f2.chunk.js",
+    "static/js/2.2ab908f2.chunk.js.map": "/static/js/2.2ab908f2.chunk.js.map",
+    "static/js/3.11b1a978.chunk.js": "/static/js/3.11b1a978.chunk.js",
+    "static/js/3.11b1a978.chunk.js.map": "/static/js/3.11b1a978.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.46d6569d.chunk.css.map": "/static/css/main.46d6569d.chunk.css.map",
+    "static/js/2.2ab908f2.chunk.js.LICENSE.txt": "/static/js/2.2ab908f2.chunk.js.LICENSE.txt",
+    "static/media/profile.f4d92e0b.jpeg": "/static/media/profile.f4d92e0b.jpeg",
+    "static/media/screenshot_of_project_2.12f36d66.png": "/static/media/screenshot_of_project_2.12f36d66.png",
+    "static/media/signupPage.acb4f10b.png": "/static/media/signupPage.acb4f10b.png",
+    "static/media/tech_blog_screenshot.59417199.png": "/static/media/tech_blog_screenshot.59417199.png",
+    "static/media/App.css": "/static/media/terminal.697f019f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.219b3b36.js",
+    "static/js/2.2ab908f2.chunk.js",
+    "static/css/main.46d6569d.chunk.css",
+    "static/js/main.338c106f.chunk.js"
+  ]
+}
